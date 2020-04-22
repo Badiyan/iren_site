@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap');
+/* BODY */
+body{
+	margin:0;
+	background-image: url('img/rose.jpg');
+	background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+}
+
+/* HEADER */
+
+.site-menu {
+	background-color: rgba(56, 54, 49, 0.5);
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu-a:hover{
+	background-color:  rgba(77, 74, 69, 0.1);
+	border-radius: 10px;
+	border: 2px double rgba(135,178,193, 0.7);
+	box-shadow:  inset 0 0 10px rgb(135,178,193);
+}
+
+
+.menu-a{
+	padding: 10px 10px 10px 10px;
+	margin-left: 10px; 
+	margin-right: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Comfortaa', cursive;
+	border: 2px double transparent;
+}
+
+hr{
+	margin: 0;
+	box-shadow: 0px 1px 20px 2px rgb(135,178,193);
+
+}
+
+/* BODY */
+
+.container{
+	display: flex;
+	justify-content: center;
+}
+
+
+
+/*Card*/
+
+.img_logo{
+	box-shadow: 0px 1px 20px 2px rgb(135,178,193);
+}
+
+.front::before{
+	content:'';
+  	background:url('img/arrow.png');
+  	background-size: cover;
+  	width: 120px;
+ 	height: 90px;
+  	position: relative;
+  	align-self: flex-end;
+  	backface-visibility: hidden;
+
+}
+
+.front::after{
+	content:'';
+  	background:transparent;
+  	background-size: cover;
+  	width: 120px;
+ 	height: 90px;
+  	position: relative;
+  	align-self: flex;
+  	backface-visibility: hidden;
+
+
+}
+
+.card-container
+{
+   font-family: 'Didact Gothic', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+
+    width: 100%;
+    height: 250px;
+    margin: 8px auto;
+
+    border-radius: 10px;
+
+    perspective: 1400px;
+}
+
+.card
+{
+    position: relative;
+
+    height: 100%;
+
+    border-radius: 10px;
+
+    widht: 100%;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back
+{
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+
+    align-items: center;
+    backface-visibility: hidden;
+}
+
+.front
+{
+    color: #fff;
+    background: transparent;
+    justify-content: center;
+}
+
+.back
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: rotateY(180deg);
+
+    color: rgb(154,170,192);
+    background: transparent;
+
+    justify-content: space-around;
+}
+
+/*back card contacts*/
+
+.main-conntacts,
+.main-name,
+.main-phone{
+	width: 25%;
+	height: auto;
+}
+
+.main-name{
+	margin-left: 130px;
+	margin-top: 30px;
+	max-height: 310px;
+	color: rgb(235, 232, 225);
+	font-size: 25px;
+	font-family: 'Marck Script', cursive;
+	text-align: center;
+	text-shadow: 1px 1px 2px rgb(180,132,132), 0 0 1em rgb(154,170,192), 0 0 0.2em rgb(154,170,192);
+}
+
+.main-contacts h2 {
+	margin: 0;
+	margin-bottom: 15px;
+	color: rgb(235, 232, 225);
+	font-size: 30px;
+	font-family: 'Marck Script', cursive;
+	text-align: center;
+	text-shadow: 1px 1px 2px rgb(180,132,132), 0 0 1em rgb(154,170,192), 0 0 0.2em rgb(154,170,192);
+}
+
+.main-contacts a {
+	text-decoration: none;
+	color: rgb(235, 232, 225);
+	text-shadow: 1px 1px 2px rgb(180,132,132), 0 0 1em rgb(154,170,192), 0 0 0.2em rgb(154,170,192);
+}
+
+.main-contacts a:hover {
+	color: rgba(135,178,193, 0.7);
+}
+
+.main-contacts {
+	display: inline-flex;
+	flex-direction: column;	
+}
+
+.insta_contact,
+.mail_contact,
+.vk-contact,
+.fb-contact{
+	display: inline-flex;
+	justify-content: space-between;
+	align-content: flex-start;
+}
+
+.main-phone{
+	display: inline-flex;
+	flex-direction: column;	
+}
+
+.main-phone p{
+	font-size: 30px;
+	text-align: center;
+	font-family: 'Lexend Giga', sans-serif;
+	text-shadow: 1px 1px 2px rgb(180,132,132), 0 0 1em rgb(154,170,192), 0 0 0.2em rgb(154,170,192);
+}
+
+
+.button_call {
+	box-shadow:inset 0px 0px 14px -3px #f2fadc;
+	background:linear-gradient(to bottom, #dbe6c4 5%, #9ba892 100%);
+	background-color:#dbe6c4;
+	border-radius:6px;
+	border:1px solid #b2b8ad;
+	display:inline-block;
+	cursor:pointer;
+	color:#757d6f;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ced9bf;
+}
+.button_call:hover {
+	background:linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
+	background-color:#9ba892;
+}
+.button_call:active {
+	position:relative;
+	top:1px;
